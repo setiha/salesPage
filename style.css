@@ -1,0 +1,152 @@
+@import url("fonts/PTSerif-Bold.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif&display=swap');
+@import url('fonts/FredokaOne-Regular.ttf');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: #447fe1 solid 1px
+}
+
+body .container-fluid {
+    border: #447fe1 solid 1px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.first-section {
+    background-image: url("pictures/seaWihtSalt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    height: auto;
+
+}
+
+
+#first-h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color: rgb(254, 193, 7);
+}
+
+#first-h5 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+}
+
+.second-section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.second-section .problem-card {
+    border-radius: 25px;
+    /*border: #447fe1 1px solid;*/
+    border: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'PT Serif', serif;
+    color: rgb(21, 47, 46);
+    font-style: normal;
+    font-weight: 700;
+    background: rgba(250, 25, 25, 0.1);
+}
+
+.second-section .problem-card .card-title {
+    font-size: 30px;
+    line-height: 1em;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(21, 47, 46);
+    font-style: normal;
+    font-weight: 600;
+}
+
+#second-h1 {
+    font-family: 'Fredoka One', cursive;;
+}
+
+#h3-parent {
+    overflow-y: hidden;
+    display: block;
+}
+
+#h3-parent #first-h3 {
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(100px)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
+#first-span, #second-span, #third-span {
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 0px;
+        color: rgb(254, 193, 7);
+        font-size: 150%
+    }
+    100% {
+        top: 0px;
+        color: rgb(254, 193, 7);
+        font-size: 150%
+    }
+}
+
+.third-section {
+    background-color: rgbA(123, 168, 231, 0.1);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+}
+
+#third-h1 {
+    color: #198754;
+    font-family: 'Fredoka One', cursive;
+}
+
+.forth-section .solution-card {
+    background-color: rgbA(25, 135, 84, 0.1);
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: 700;
+    border: 0;
+    position: relative;
+
+}
+
+
+@media screen and (max-width: 575px) {
+    .problem-card {
+        margin-bottom: 10px;
+    }
+
+    #first-h1 {
+        font-size: 40px;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+    }
+}
