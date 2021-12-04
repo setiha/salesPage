@@ -61,6 +61,7 @@ body .container-fluid {
 #second-h1 {
     font-family: 'Fredoka One', cursive;
     color:rgb(132, 32, 41);
+    transform: rotate(2deg);
 }
 
 #h3-parent {
